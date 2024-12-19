@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="company logo">
+        <div class="header-title">Analyzing Real Estate data<br>using Machine Learning</div>
+        <div class="names"><span style="font-size: 14px; color: #6e360e">Made from scratch by</span><br>Reet Nayan<br>Sparsh Khanal<br>Samved Vyas</div>
+    </div>
+    <div class="space"></div>
+    <div class="section">
+        <div class="section-title">Customer Segmentation</div>
+        <div class="main-container">
+            <div class="sub-container">
+                <button class="AvS">Age vs Satisfaction</button>
+                <img class="AvS-image" src="{{ url_for('static', filename='images/AvS.png') }}" alt="Age vs Satisfaction Image" style="display:none; width: 100%; height: auto;" />
+            </div>
+            <div class="sub-container">
+                <button class="IvS">Income vs Satisfaction</button>
+                <img class="IvS-image" src="{{ url_for('static', filename='images/IvS.png') }}" alt="Income vs Satisfaction Image" style="display:none; width: 100%; height: auto;" />
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="section">
+        <div class="section-title">Rental Price Estimator</div>
+        <div class="main-container">
+            <div class="sub-container">
+                <button class="reg1">Region 1</button>
+                <img class="reg1-image" src="{{ url_for('static', filename='images/region1.png') }}" alt="Region 1 Image" style="display:none; width: 100%; height: auto;" />
+            </div>
+            <div class="sub-container">
+                <button class="reg2">Region 2</button>
+                <img class="reg2-image" src="{{ url_for('static', filename='images/region2.png') }}" alt="Region 2 Image" style="display:none; width: 100%; height: auto;" />
+            </div>
+            <div class="sub-container">
+                <button class="reg3">Region 3</button>
+                <img class="reg3-image" src="{{ url_for('static', filename='images/region3.png') }}" alt="Region 3 Image" style="display:none; width: 100%; height: auto;" />
+            </div>
+        </div>
+    </div>
+    <div class="footer">© 2024 Mundeshwari Group. All Rights Reserved.</div>
+</body>
+
+</html>
